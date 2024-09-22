@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+input#search {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.anime-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
