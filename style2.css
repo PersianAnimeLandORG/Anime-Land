@@ -1,0 +1,92 @@
+/* استایل‌های عمومی */
+body {
+    font-family: 'Vazir', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    background-color: #2980b9;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+}
+
+a:hover {
+    background-color: #1a6b96;
+}
+
+/* استایل کشویی */
+.accordion {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: center; /* وسط‌چین کردن متن */
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.accordion:hover {
+    background-color: #2980b9;
+}
+
+.panel {
+    padding: 0 15px;
+    background-color: #dde1e7; /* خاکستری مایل به آبی کمرنگ برای حالت بسته */
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+}
+
+.panel video {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.panel a {
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel a:hover {
+    background-color: #c0392b;
+}
+
+.panel.active {
+    max-height: 500px;
+    opacity: 1;
+    background-color: #cfd8dc; /* قهوه‌ای کمرنگ کمی تیره‌تر در حالت باز */
+}
+

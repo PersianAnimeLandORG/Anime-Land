@@ -1,35 +1,81 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* گرادیان جذاب‌تر */
     margin: 0;
     padding: 0;
-    text-align: center;
+    color: white;
 }
 
 header {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
 }
 
-input#search {
+.search-box {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.search-box input {
     width: 80%;
-    padding: 10px;
-    margin: 20px 0;
-    font-size: 18px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px; /* حاشیه گرد */
+    border: 1px solid #3498db;
+    outline: none;
+    transition: all 0.3s ease;
+    font-weight: bold; /* متن داخل کادر جستجو بولد */
+    font-family: 'Tahoma', sans-serif; /* تغییر فونت */
+    text-align: center;
 }
 
-#anime-list {
+.search-box input:focus {
+    border-color: #2c3e50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.anime-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
 }
 
-.anime-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: left;
+.anime-card {
+    background-color: #d3d3d3; /* تغییر پس‌زمینه به خاکستری ملایم */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 200px; /* افزایش عرض */
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.anime-card img {
+    width: 100%;
+    height: 230px; /* افزایش کمی ارتفاع عکس‌ها */
+    object-fit: cover;
+}
+
+.anime-card h3 {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    margin: 0;
+    text-decoration: none; /* حذف خط زیر لینک‌ها */
+}
+
+.anime-card a {
+    text-decoration: none; /* حذف خط زیر لینک‌ها */
+    color: white; /* حفظ رنگ سفید لینک */
 }
